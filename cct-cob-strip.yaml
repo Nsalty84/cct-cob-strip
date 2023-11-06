@@ -1,10 +1,16 @@
 substitutions:
   device_name: "cct-cob-strip"
   friendly_name: "CCT cob strip"
+  project_name: "CCT cob strip"
+  project_version: "1.0"
 
 esphome:
   name: ${device_name}
   friendly_name: ${friendly_name}
+  name_add_mac_suffix: true
+  project:
+    name: ${project_name}
+    version: ${project_version}
 
 esp8266:
   board: esp01_1m
