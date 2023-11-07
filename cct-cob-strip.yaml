@@ -14,7 +14,6 @@ esphome:
 
 bk72xx:
   board: wb3s
-  restore_from_flash: true
 
 logger:
 
