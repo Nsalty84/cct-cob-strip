@@ -13,7 +13,7 @@ esphome:
     version: ${project_version}
 
 bk72xx:
-  board:
+  board: wb3s
   restore_from_flash: true
 
 logger:
