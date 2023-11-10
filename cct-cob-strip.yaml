@@ -1,5 +1,5 @@
 substitutions:
-  device_name: "cct-cob-strip"
+  name: "cct-cob-strip"
   friendly_name: "CCT cob strip"
   project_name: "Salty.CCT cob strip"
   project_version: "1.0"
