@@ -1,7 +1,7 @@
 substitutions:
   device_name: "cct-cob-strip"
   friendly_name: "CCT cob strip"
-  project_name: "Salty.CCT_cob_strip_penis"
+  project_name: "Salty.CCT_cob_strip"
   project_version: "1.0"
 
 esphome:
