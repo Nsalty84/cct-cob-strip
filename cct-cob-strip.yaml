@@ -12,6 +12,9 @@ esphome:
     name: ${project_name}
     version: ${project_version}
 
+dashboard_import:
+  package_import_url: github://nsalty84/cct-cob-strip/cct-cob-strip.yaml
+
 bk72xx:
   board: wb3s
 
@@ -25,9 +28,6 @@ wifi:
   ap: {}
 
 captive_portal:
-
-dashboard_import:
-  package_import_url: github://nsalty84/cct-cob-strip/cct-cob-strip.yaml
 
 output:
   - platform: libretiny_pwm
