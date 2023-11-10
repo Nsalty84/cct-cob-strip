@@ -13,7 +13,7 @@ esphome:
     version: ${project_version}
 
 dashboard_import:
-  package_import_url: github://nsalty84/cct-cob-strip/cct-cob-strip.yaml@main
+  package_import_url: github://raw.githubusercontent.com/nsalty84/cct-cob-strip/main/cct-cob-strip.yaml
   import_full_config: false
 
 bk72xx:
