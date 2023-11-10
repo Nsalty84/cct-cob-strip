@@ -39,7 +39,7 @@ output:
 
 light:
   - platform: cwww
-    name: ${friendly_name}
+    name: none
     default_transition_length: 0s
     restore_mode: restore_default_off
     cold_white: output_coldwhite
