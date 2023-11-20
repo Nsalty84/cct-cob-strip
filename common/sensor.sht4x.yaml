@@ -1,0 +1,12 @@
+sensor:
+  - platform: sht4x
+    temperature:
+      name: "${friendly_name} Temperature"
+      filters:
+        - offset: ${temperature_offset}
+    humidity:
+      name: "${friendly_name} Humidity"
+      filters:
+        - offset: ${humidity_offset}
+    address: 0x44
+    update_interval: ${temperature_update_interval}
