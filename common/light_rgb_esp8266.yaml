@@ -1,0 +1,26 @@
+esp8266:
+  board: esp01_1m
+  restore_from_flash: true
+
+output:
+  - platform: esp8266_pwm
+    pin: 14
+    id: output_blue
+  - platform: esp8266_pwm
+    pin: 12
+    id: output_green
+  - platform: esp8266_pwm
+    pin: 4
+    id: output_red
+
+light:
+  - platform: rgb
+    name: ${friendly_name}
+    default_transition_length: 0s
+    restore_mode: restore_default_off
+    red: output_red
+    green: output_green
+    blue: output_blue
+    gamma_correct: 1.7
+    effects:
+      - flicker:
