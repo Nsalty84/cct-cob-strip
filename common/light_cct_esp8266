@@ -1,0 +1,23 @@
+esp8266:
+  board: esp01_1m
+  restore_from_flash: true
+
+output:
+  - platform: esp8266_pwm
+    pin: 5
+    id: output_coldwhite
+  - platform: esp8266_pwm
+    pin: 13
+    id: output_warmwhite
+
+light:
+  - platform: cwww
+    name: ${friendly_name}
+    default_transition_length: 0s
+    restore_mode: restore_default_off
+    cold_white: output_coldwhite
+    warm_white: output_warmwhite
+    cold_white_color_temperature: 6500 K
+    warm_white_color_temperature: 2700 K
+    gamma_correct: 1.5
+    constant_brightness: true
