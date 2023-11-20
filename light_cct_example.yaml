@@ -1,5 +1,5 @@
 substitutions:
-  device_name: "your-name"
+  name: "your-name"
   friendly_name: "Your name"
 
 packages:
