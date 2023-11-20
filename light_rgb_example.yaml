@@ -1,0 +1,22 @@
+substitutions:
+  device_name: "your-name"
+  friendly_name: "Your name"
+
+packages:
+  remote_package:
+    url: https://github.com/Nsalty84/esphome
+    files: [common/esphome.yaml, common/light_rgb_esp8266.yaml]
+
+api:
+  encryption:
+    key: "your key"
+
+ota:
+  password: "your password"
+
+wifi:
+  manual_ip:
+    static_ip: !secret your_ip
+
+  ap:
+    password: "your password"
