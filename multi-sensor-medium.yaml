@@ -1,3 +1,52 @@
+substitutions:
+  name: "multi-sensor-medium"
+  friendly_name: "Multi sensor medium"
+  project_name: "Salty.Multi sensor medium"
+  project_version: "1.0"
+  temperature_offset: "-4.5"
+  humidity_offset: "17"
+  temperature_update_interval: "60s"
+  illuminance_update_interval: "30s"
+
+packages:
+  packages:
+  remote_package:
+    url: https://github.com/Nsalty84/esphome
+    files: [common/esphome.yaml, common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
+
+esphome:
+  name_add_mac_suffix: true
+  project:
+    name: ${project_name}
+    version: ${project_version}
+
 dashboard_import:
   package_import_url: github://nsalty84/esphome/multi-sensor-medium.yaml@main
   import_full_config: false
+
+logger:
+  baud_rate: 0
+
+api:
+  encryption:
+    key: "your key"
+
+ota:
+  password: "your password"
+
+wifi:
+  manual_ip:
+    static_ip: !secret your_ip
+
+  ap:
+    password: "your password"
+
+uart:
+  tx_pin: 1
+  rx_pin: 3
+  baud_rate: 256000
+
+i2c:
+  sda: 21
+  scl: 19
+  scan: true
