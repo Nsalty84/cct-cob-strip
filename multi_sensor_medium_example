@@ -1,0 +1,40 @@
+substitutions:
+  name: "your-name"
+  friendly_name: "Your name"
+  temperature_update_interval: 60s
+  illuminance_update_interval: "1s"
+  temperature_offset: "-4.5"
+  humidity_offset: "17"
+
+packages:
+  packages:
+  remote_package:
+    url: https://github.com/Nsalty84/esphome
+    files: [common/esphome.yaml, common/esp32.yaml, common/sensor.sht4x.yaml, common/sensor_bh1750.yaml, common/sensor_ld2410.yaml]
+    
+logger:
+  baud_rate: 0
+
+api:
+  encryption:
+    key: "your key"
+
+ota:
+  password: "your password"
+
+wifi:
+  manual_ip:
+    static_ip: !secret your_ip
+
+  ap:
+    password: "your password"
+
+uart:
+  tx_pin: 1
+  rx_pin: 3
+  baud_rate: 256000
+
+i2c:
+  sda: 21
+  scl: 19
+  scan: true
