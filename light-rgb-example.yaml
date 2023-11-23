@@ -5,7 +5,7 @@ substitutions:
 packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
-    files: [common/esphome.yaml, common/light_rgb_esp8266.yaml]
+    files: [common/esphome.yaml, common/light-rgb-esp8266.yaml]
 
 api:
   encryption:
