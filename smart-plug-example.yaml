@@ -5,7 +5,7 @@ substitutions:
 packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
-    files: [common/esphome.yaml, common/smart_plug_esp8266.yaml]
+    files: [common/esphome.yaml, common/smart-plug-esp8266.yaml]
 
 api:
   encryption:
