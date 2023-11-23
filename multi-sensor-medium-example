@@ -2,7 +2,7 @@ substitutions:
   name: "your-name"
   friendly_name: "Your name"
   temperature_update_interval: 60s
-  illuminance_update_interval: "1s"
+  illuminance_update_interval: "30s"
   temperature_offset: "-4.5"
   humidity_offset: "17"
 
@@ -10,7 +10,7 @@ packages:
   packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
-    files: [common/esphome.yaml, common/esp32.yaml, common/sensor.sht4x.yaml, common/sensor_bh1750.yaml, common/sensor_ld2410.yaml]
+    files: [common/esphome.yaml, common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
     
 logger:
   baud_rate: 0
