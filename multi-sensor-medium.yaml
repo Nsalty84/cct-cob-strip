@@ -12,9 +12,10 @@ packages:
   packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
-    files: [common/esphome.yaml, common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
+    files: [common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
 
 esphome:
+  name: ${name}
   name_add_mac_suffix: true
   project:
     name: ${project_name}
@@ -33,6 +34,8 @@ ota:
 
 wifi:
   ap: {}
+
+captive_portal:
 
 uart:
   tx_pin: 1
