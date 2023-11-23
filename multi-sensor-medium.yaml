@@ -9,7 +9,6 @@ substitutions:
   illuminance_update_interval: "30s"
 
 packages:
-  packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
     files: [common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
