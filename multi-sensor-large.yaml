@@ -1,6 +1,6 @@
 substitutions:
-  name: "your-name"
-  friendly_name: "Your name"
+  name: "multi-sensor-large"
+  friendly_name: "Multi sensor large"
   media_player_name: "Media player"
   project_name: "Salty.Multi sensor large"
   project_version: "1.0"
@@ -12,7 +12,7 @@ substitutions:
 packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
-    files: [common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml, common/audio-amplifier.yaml, common/audio_microphone.yaml]
+    files: [common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml, common/audio-amplifier.yaml, common/audio-microphone.yaml]
 
 esphome:
   name: ${name}
