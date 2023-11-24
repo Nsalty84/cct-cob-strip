@@ -1,0 +1,13 @@
+media_player:
+  - platform: i2s_audio
+    name: ${media_player_name}
+    dac_type: external
+    i2s_dout_pin: 32
+    mode: mono
+
+microphone:
+  - platform: i2s_audio
+    id: external_mic
+    adc_type: external
+    i2s_din_pin: 26
+    pdm: false
