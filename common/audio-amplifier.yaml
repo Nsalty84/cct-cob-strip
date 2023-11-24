@@ -1,6 +1,6 @@
 media_player:
   - platform: i2s_audio
-    name: Media player
+    name: ${media_player_name}
     dac_type: external
     i2s_dout_pin: 32
     mode: mono
