@@ -1,0 +1,6 @@
+microphone:
+  - platform: i2s_audio
+    id: external_mic
+    adc_type: external
+    i2s_din_pin: 26
+    pdm: false
