@@ -12,7 +12,7 @@ substitutions:
 packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
-    files: [common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml, common/audio-amplifier.yaml, common/audio-microphone.yaml]
+    files: [common/esp32.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml, common/audio.yaml]
 
 esphome:
   name: ${name}
