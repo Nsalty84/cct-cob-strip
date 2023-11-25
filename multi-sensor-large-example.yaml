@@ -1,7 +1,6 @@
 substitutions:
   name: "your-name"
   friendly_name: "Your name"
-  media_player_name: "Media player"
   temperature_update_interval: 60s
   illuminance_update_interval: "30s"
   temperature_offset: "-4.5"
