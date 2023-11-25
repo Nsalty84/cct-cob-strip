@@ -1,7 +1,6 @@
 substitutions:
   name: "multi-sensor-large"
   friendly_name: "Multi sensor large"
-  media_player_name: "Media player"
   project_name: "Salty.Multi sensor large"
   project_version: "1.0"
   temperature_update_interval: 60s
