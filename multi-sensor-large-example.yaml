@@ -1,7 +1,7 @@
 substitutions:
   name: "your-name"
   friendly_name: "Your name"
-  temperature_update_interval: 60s
+  temperature_update_interval: "60s"
   illuminance_update_interval: "30s"
   temperature_offset: "-4.5"
   humidity_offset: "17"
