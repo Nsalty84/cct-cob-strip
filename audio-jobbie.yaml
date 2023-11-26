@@ -1,0 +1,36 @@
+substitutions:
+  name: "audio-jobbie"
+  friendly_name: "Audio jobbie"
+  project_name: "Salty.Audio jobbie"
+  project_version: "1.0"
+
+packages:
+  remote_package:
+    url: https://github.com/Nsalty84/esphome
+    files: [common/esp32.yaml, common/audio.yaml]
+
+esphome:
+  name: ${name}
+  name_add_mac_suffix: true
+  project:
+    name: ${project_name}
+    version: ${project_version}
+
+dashboard_import:
+  package_import_url: github://nsalty84/esphome/audio-jobbie.yaml@main
+  import_full_config: false
+
+logger:
+
+api:
+
+ota:
+
+wifi:
+  ap: {}
+
+captive_portal:
+
+i2s_audio:
+  i2s_lrclk_pin: 25
+  i2s_bclk_pin: 33
