@@ -1,0 +1,28 @@
+substitutions:
+  name: "your-name"
+  friendly_name: "Your name"
+
+packages:
+  remote_package:
+    url: https://github.com/Nsalty84/esphome
+    files: [common/esphome.yaml, common/esp32.yaml, common/audio.yaml]
+    
+logger:
+
+api:
+  encryption:
+    key: "your key"
+
+ota:
+  password: "your password"
+
+wifi:
+  manual_ip:
+    static_ip: !secret your_ip
+
+  ap:
+    password: "your password"
+
+i2s_audio:
+  i2s_lrclk_pin: 25
+  i2s_bclk_pin: 33
