@@ -1,0 +1,47 @@
+substitutions:
+  name: "multi-sensor-small"
+  friendly_name: "Multi sensor small"
+  project_name: "Salty.Multi sensor small"
+  project_version: "1.0"
+  temperature_update_interval: "60s"
+  illuminance_update_interval: "30s"
+  temperature_offset: "-4.5"
+  humidity_offset: "17"
+
+packages:
+  remote_package:
+    url: https://github.com/Nsalty84/esphome
+    files: [common/esp32-c3.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
+
+esphome:
+  name: ${name}
+  name_add_mac_suffix: true
+  project:
+    name: ${project_name}
+    version: ${project_version}
+
+dashboard_import:
+  package_import_url: github://nsalty84/esphome/multi-sensor-small.yaml@main
+  import_full_config: false
+
+logger:
+  baud_rate: 0
+
+api:
+
+ota:
+
+wifi:
+  ap: {}
+
+captive_portal:
+
+uart:
+  tx_pin: 21
+  rx_pin: 20
+  baud_rate: 256000
+
+i2c:
+  sda: 1
+  scl: 2
+  scan: true
