@@ -5,8 +5,8 @@ substitutions:
   project_version: "1.0"
   temperature_update_interval: "60s"
   illuminance_update_interval: "30s"
-  temperature_offset: "-4.5"
-  humidity_offset: "17"
+  temperature_offset: "-2.5"
+  humidity_offset: "10"
 
 packages:
   remote_package:
