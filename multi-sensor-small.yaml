@@ -32,6 +32,7 @@ api:
 ota:
 
 wifi:
+  output_power: "8.5"
   ap: {}
 
 captive_portal:
