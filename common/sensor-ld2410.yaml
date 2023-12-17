@@ -3,26 +3,26 @@ ld2410:
 sensor:
   - platform: ld2410
     moving_distance:
-      name : Moving Distance
+      name : ${friendly_name} Moving Distance
     still_distance:
-      name: Still Distance
+      name: ${friendly_name} Still Distance
     detection_distance:
-      name: Detection Distance
+      name: ${friendly_name} Detection Distance
    
 binary_sensor:
   - platform: ld2410
     has_target:
-      name: Presence
+      name: ${friendly_name} Presence
     has_moving_target:
-      name: Moving Target
+      name: ${friendly_name} Moving Target
     has_still_target:
-      name: Still Target
+      name: ${friendly_name} Still Target
 
 number:
   - platform: ld2410
     timeout:
-      name: timeout
+      name: ${friendly_name} timeout
     max_move_distance_gate:
-      name: max move distance gate
+      name: ${friendly_name} max move distance gate
     max_still_distance_gate:
-      name: max still distance gate
+      name: ${friendly_name} max still distance gate
