@@ -9,7 +9,7 @@ substitutions:
 packages:
   remote_package:
     url: https://github.com/Nsalty84/esphome
-    files: [common/esphome.yaml, common/esp32-c3.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
+    files: [common/esphome-c3.yaml, common/esp32-c3.yaml, common/sensor-sht4x.yaml, common/sensor-bh1750.yaml, common/sensor-ld2410.yaml]
 
 logger:
   baud_rate: 0
